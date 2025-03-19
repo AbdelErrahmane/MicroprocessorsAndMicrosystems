@@ -1,0 +1,108 @@
+#pragma once
+namespace Eloquent {
+    namespace ML {
+        namespace Port {
+            class DecisionTree {
+                public:
+                    /**
+                    * Predict class for features vector
+                    */
+                    int predict(float *x) {
+                        if (x[1] <= -0.448337659239769) {
+                            if (x[3] <= -0.48353181779384613) {
+                                if (x[1] <= -0.47520802915096283) {
+                                    if (x[0] <= -0.6850155293941498) {
+                                        return 1;
+                                    }
+
+                                    else {
+                                        return 5;
+                                    }
+                                }
+
+                                else {
+                                    if (x[8] <= 0.5) {
+                                        return 0;
+                                    }
+
+                                    else {
+                                        return 5;
+                                    }
+                                }
+                            }
+
+                            else {
+                                if (x[3] <= -0.48331035673618317) {
+                                    if (x[4] <= 0.7202410697937012) {
+                                        return 1;
+                                    }
+
+                                    else {
+                                        return 0;
+                                    }
+                                }
+
+                                else {
+                                    if (x[0] <= 2.939798355102539) {
+                                        return 0;
+                                    }
+
+                                    else {
+                                        return 7;
+                                    }
+                                }
+                            }
+                        }
+
+                        else {
+                            if (x[1] <= -0.43386900424957275) {
+                                if (x[3] <= 1.360820472240448) {
+                                    if (x[2] <= 0.8014646768569946) {
+                                        return 0;
+                                    }
+
+                                    else {
+                                        return 5;
+                                    }
+                                }
+
+                                else {
+                                    if (x[2] <= 0.5325421392917633) {
+                                        return 4;
+                                    }
+
+                                    else {
+                                        return 3;
+                                    }
+                                }
+                            }
+
+                            else {
+                                if (x[4] <= 1.0264071226119995) {
+                                    if (x[2] <= 1.3969359993934631) {
+                                        return 2;
+                                    }
+
+                                    else {
+                                        return 5;
+                                    }
+                                }
+
+                                else {
+                                    if (x[1] <= 0.25442588329315186) {
+                                        return 3;
+                                    }
+
+                                    else {
+                                        return 4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                protected:
+                };
+            }
+        }
+    }
